@@ -1,0 +1,71 @@
+body, #div-opening, #div-winner{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+    background-color: #F16865;
+	font-family: arial;
+}
+.title h4, #div-winner h4{
+	font-size: 25px;
+}
+#div-winner{
+	position: fixed;
+    z-index: 9999;
+    text-align: center;
+    top: 50px;
+}
+#div-winner img{
+	height: 350px;
+}
+#div-opening{
+	background-image: url(../imgs/capa2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: fixed;
+    z-index: 9999;
+}
+#div-opening.visible, #div-winner.visible{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+#div-opening.hidden, #div-winner.hidden{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+div#outer {
+	height: 100%;
+	width: 100%;
+}
+
+div#inner {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#menu{
+	margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+    list-style: none;
+}
+.options, .title{
+	margin-left: auto;
+	margin-right: auto;
+	width: 750px;
+    text-align: center;
+}
+.options img{
+    height: 120px;
+    cursor: pointer;
+}
+.options .div-opt{
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+}

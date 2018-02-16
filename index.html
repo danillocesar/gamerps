@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Rock, Paper, Scissors Game</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="resources/css/game.css">
+	</head>
+	<body onload="fadeOpening()">
+		<div id="div-opening" class="visible"></div>
+		<div id="outer">
+			<div id="inner">
+				<ul id="menu">
+					<li><a href="classic.html"><img src="resources/imgs/classic-player-ai.png"></img></a></li>
+					<li><a href="#" onclick="autoMode(1)"><img src="resources/imgs/classic-ai-ai.png"></img></a></li>
+					<li><a href="advanced.html"><img src="resources/imgs/advanced-player-ai.png"></img></a></li>
+					<li><a href="#" onclick="autoMode(2)"><img src="resources/imgs/advanced-ai-ai.png"></img></a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="resources/js/main.js"></script>
+		<script src="resources/js/rules.js"></script>
+	</body>
+</html>
